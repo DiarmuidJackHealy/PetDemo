@@ -30,6 +30,12 @@ package com.sparta.dh.pets;
         }
     }
 
+class Ostrich extends Bird {
+    public void sound() {
+        System.out.println("Tweet!");
+    }
+}
+
  class Demo {
     public static void main(String[] args) {
 
@@ -53,6 +59,14 @@ package com.sparta.dh.pets;
         peter.canFly = true;
 
         System.out.println("Hello, my name is " + peter.name + ". It's " + peter.canFly + " that I can fly and I say "); peter.sound();
+
+        Ostrich oscar = new Ostrich();
+        oscar.age = 9;
+        oscar.name = "Oscar";
+        oscar.canFly = false;
+
+        System.out.println("Hello, my name is " + oscar.name + ". It's " + oscar.canFly + " that I can fly and I say "); oscar.sound();
+
     }
 }
 
